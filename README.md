@@ -16,7 +16,6 @@ Projet réalisé dans le cadre du cours *Technique et chaîne de publication él
 | `artaud_letters.xsl` | Feuille de transformation XSLT vers HTML |
 | `style.css` | Feuille de style |
 | `Antonin_Artaud_1926.jpg` | Portrait utilisé sur la page d'accueil |
-| `index.html`, `letter_1-3.html`, `persons.html`, `places.html` | Pages HTML générées |
 
 ## Lancer la transformation dans Oxygen
 
@@ -25,9 +24,9 @@ La feuille XSL génère plusieurs fichiers HTML via `xsl:result-document`. Il fa
 **Pour chaque scénario :**
 
 Créer un nouveau scénario de type **XSLT** avec les paramètres suivants :
-   - Processeur : **Saxon-HE** (XSLT 2.0 requis)
+   - Processeur : **Saxon PE ou HE**
    - Feuille de style : `artaud_letters.xsl`
-   - Ajouter un paramètre : nom `letter_number`, valeur `1`, `2` ou `3` selon la lettre
+   - Ajouter un paramètre : nom `letter_number`, valeur 1, 2 ou 3 selon la lettre. Bien enlever les guillemets mis automatiquement dans Oxygen.
 
 **Résultat attendu :**
 
