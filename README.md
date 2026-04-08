@@ -24,13 +24,10 @@ La feuille XSL génère plusieurs fichiers HTML via `xsl:result-document`. Il fa
 
 **Pour chaque scénario :**
 
-1. Ouvrir le fichier source (`letter_1.xml`, `letter_2.xml` ou `letter_3.xml`)
-2. Menu **Document → Transformation → Configurer les scénarios de transformation**
-3. Créer un nouveau scénario de type **XSLT** avec les paramètres suivants :
+Créer un nouveau scénario de type **XSLT** avec les paramètres suivants :
    - Processeur : **Saxon-HE** (XSLT 2.0 requis)
    - Feuille de style : `artaud_letters.xsl`
    - Ajouter un paramètre : nom `letter_number`, valeur `1`, `2` ou `3` selon la lettre
-4. Lancer la transformation
 
 **Résultat attendu :**
 
