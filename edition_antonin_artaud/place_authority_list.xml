@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listPlace>
+   <place type="city" xml:id="paris">
+      <placeName ref="#paris">Paris</placeName>
+      <country>France</country>
+   </place>
+   <place type="country" xml:id="mexico">
+      <country>Mexico</country>
+   </place>
+   <place type="city" xml:id="mexico_city">
+      <placeName ref="#mexico">Mexico city</placeName>
+      <country>Mexico</country>
+   </place>
+   <place type="country" xml:id="france">
+      <country>France</country>
+   </place>
+</listPlace>

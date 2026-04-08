@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listPerson>
+   <person xml:id="artaud">
+      <persName key="https://www.idref.fr/026692465">
+         <forename>Antonin</forename>
+         <surname>Artaud</surname>
+      </persName>
+      <birth when="1896-09-04"/>
+      <death when="1948-03-04"/>
+   </person>
+   <person xml:id="paulhan">
+      <persName key="https://www.idref.fr/027060810">
+         <forename>Jean</forename>
+         <surname>Paulhan</surname>
+      </persName>
+      <birth when="1884-12-02"/>
+      <death when="1968-10-09"/>
+   </person>
+   <person xml:id="grossman">
+      <persName key="https://www.idref.fr/034342095">
+         <forename>Evelyne</forename>
+         <surname>Grossman</surname>
+      </persName>
+   </person>
+   <person xml:id="massignon">
+      <persName key="https://www.idref.fr/162306210">
+         <forename>Louis</forename>
+         <surname>Massignon</surname>
+      </persName>
+      <birth when="1883-07-25"/>
+      <death when="1962-10-31"/>
+   </person>
+   <person xml:id="cortez">
+      <persName key="https://www.idref.fr/027288234">
+         <forename>Hernán</forename>
+         <surname>Cortés</surname>
+      </persName>
+      <birth when="1485"/>
+      <death when="1547"/>
+   </person>
+   <person xml:id="ricard">
+      <persName key="https://www.idref.fr/027098184">
+         <forename>Robert</forename>
+         <surname>Ricard</surname>
+      </persName>
+      <birth when="1900"/>
+      <death when="1984"/>
+   </person>
+   <person xml:id="rivet">
+      <persName key="https://www.idref.fr/02959443X">
+         <forename>Paul</forename>
+         <surname>Rivet</surname>
+      </persName>
+      <birth when="1876-05-07"/>
+      <death when="1958-03-21"/>
+   </person>
+   <person xml:id="marx">
+      <persName key="https://www.idref.fr/027329305">
+         <forename>Karl</forename>
+         <surname>Marx</surname>
+      </persName>
+      <birth when="1818-05-05"/>
+      <death when="1883-03-14"/>
+   </person>
+   <person xml:id="moctezuma">
+      <persName type="historical">
+         <name>Moctezuma</name>
+      </persName>
+      <birth when="1466"/>
+      <death when="1520"/>
+   </person>
+</listPerson>
+

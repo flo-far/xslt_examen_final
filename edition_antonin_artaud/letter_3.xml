@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI [<!ENTITY person_authority_list SYSTEM 'person_authority_list.xml'> 
+<!ENTITY place_authority_list SYSTEM 'place_authority_list.xml'>]>
+
+
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The Mexico letters of Antonin Artaud. An anotated digital edition of three
+               extracts.</title>
+            <editor>
+               <forename>Florent</forename>
+               <surname>Farfouillon</surname>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Ecole nationale des Chartes - PSL</authority>
+            <pubPlace>Paris</pubPlace>
+            <date when="2026">2026</date>
+            <availability status="free">
+               <licence>
+                  <p>Unlicensed but freely accesible through a GitHub repository.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country ref="#france">France</country>
+                  <institution>IMEC - Institut Mémoires de l'Edition Contemporaine</institution>
+                  <collection>Fonds Paulhan</collection>
+               </msIdentifier>
+               <physDesc>
+                  <p>Originals have not been consulted for the present edition.</p>
+               </physDesc>
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="#artaud">
+                        <forename>Antonin</forename>
+                        <surname>Artaud</surname>
+                     </persName>
+                  </author>
+                  <title>Œuvres</title>
+                  <editor>
+                     <persName ref="#grossman">
+                        <forename>Évelyne</forename>
+                        <surname>Grossman</surname>
+                     </persName>
+                  </editor>
+                  <edition>
+                     <date when="2004">2004</date>
+                     <idno type="isbn">978-2-07-076507-2</idno>
+                  </edition>
+                  <imprint>
+                     <publisher>Gallimard</publisher>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                  </imprint>
+               </monogr>
+               <note>
+                  <p>In "Quarto" collection, this book compile majors works from Antonin Artaud,
+                     with an important place for his correspondance.</p>
+               </note>
+            </biblStruct>
+            &person_authority_list;
+            &place_authority_list;
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The project is part of the course "Modelling Humanities data with XML-TEI" and
+               consists of encoding a sample of documents according to the TEI-all standard.</p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#artaud">
+                  <forename>Antonin</forename>
+                  <surname>Artaud</surname>
+               </persName>
+                  <placeName ref="#mexico_city">Mexico</placeName>
+            </correspAction>
+         </correspDesc>
+            <correspDesc>
+               <correspAction type="recieved">
+               <persName ref="#paulhan">
+                  <forename>Jean</forename>
+                  <surname>Paulhan</surname>
+               </persName>
+                  <placeName ref="#paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <div type="letter">
+            <p>Un éditeur Mexicain vient de me proposer de réunir tous mes textes sur la culture
+                  <term type="ethnological_concept">autochtone</term> du <placeName ref="#mexico"
+                  >Mexique</placeName> en un livre, et d’y joindre divers textes sur le théâtre,
+               entre autres <title level="a">« L’Athlétisme affectif</title>, et <title level="a"
+                  >les lettres sur le langage »</title>. Ce livre contiendra en plus d’autres textes
+                  <term type="political_concept">révolutionnaires</term>, comme une Lettre ouverte
+               aux Gouverneurs des États du <placeName ref="#mexico">Mexique</placeName>, un Message
+               à la <seg type="political_concept">jeunesse Révolutionnaire de <placeName
+                     ref="#mexico_city">Mexico</placeName></seg>, et une nouvelle conférence <term
+                  type="political_concept">anti-Marxiste</term> intitulée : <title><seg
+                     type="political_concept">La Révolution Universelle</seg> &amp; le Problème
+                     <term type="ethnological_concept">Indien</term>.</title> En plus, un groupe
+               d’Israélites m’a demandé une série de conférences sur <seg
+                  type="ethnological_concept">les vieilles cultures magiques du Mexique</seg>, dont
+               j’unirai la force à la culture <term type="theological_concept">kabbalistique</term>
+               des Juifs que les Juifs modernes ont trahie. Et je le leur dirai. Ce livre
+               s’intitulera dans son entier</p>
+
+            <ab type="displayed_text">
+               <title>« Messages <term type="political_concept">Révolutionnaires</term> »</title>
+            </ab>
+
+            <p>et il ne faudrait tout de même pas que <placeName ref="#paris">Paris</placeName>
+               doive faire traduire en français ces Messages pour les connaître. Et je vous le
+               redis, mes 3 conférences envoyées en <date when="1936-02">février</date> dernier
+               représentent une partie de ces Messages. J’espère beaucoup, cher ami, recevoir une
+               lettre de vous me disant que mes conférences ont commencé à paraître en <date
+                  when="1936-06">juin 1936</date>, dans la <orgName><abbr>N. R.
+                     F</abbr><expan>Nouvelle Revue Française</expan></orgName>. soit en totalité,
+               soit au moins en partie, et en commençant par la première</p>
+
+            <ab type="displayed_text"><title>Surréalisme &amp; Révolution.</title></ab>
+
+            <p>Écrivez-moi pour me dire ce que vous faites, comment va Madame
+                  Paulhan, et ce que deviennent tous nos amis : <persName ref="#daumal" type="contemporary">René
+                  Daumal</persName>, <persName ref="#reneville" type="contemporary">Rolland de Renéville</persName>, etc. Dites-leur que
+               je compte revenir bientôt, c’est-à-dire vers <date when="1936-07">juillet</date> ou
+               au plus tard en <date when="1936-10">octobre</date>, et que j’espère rapporter une
+               abondante moisson de documents <term type="theological_concept">ésotériques</term>.
+               Car ici l'extraordinnaire pululle, il suffit de se baisser pour rammasser des
+               merveilles. Et j'espère en renvenant trouver mon livre sur le théâtre déjà paru, et
+               aussi et surtout les conférences. Par 2 fois des textes comme le <title level="a">«
+                  Théâtre &amp; la Peste »</title> et <title level="a">« La Mise en Scène et la
+                  Métaphysique »</title>, ont paru sans trop attendre, cette fois il me semble que
+               ces 3 conférences contiennent des éléments encore plus urgents. Je compte donc sur
+               votre amitié, et surtout sur votre sympathie pour les idées en faveur desquelles je
+               ne cesse de travailler ; et je vous serre affectueusement les mains.</p>
+
+            <closer>
+               <signed>
+                  <persName ref="#artaud" type="contemporary">
+                     <surname>Antonin</surname>
+                     <forename>Artaud</forename>
+                  </persName>. </signed>
+               <location>
+                  <placeName ref="#mexico">Légation de France,Lerma 35, Mexico D.F.</placeName>
+               </location>
+               <note type="post_scriptum">P.S. L’Université de Mexico va me confier d’ici quelques
+                  semaines une mission pour étudier les vieilles races Indiennes dans l’intérieur du
+                  pays : montagnes, déserts, etc.</note>
+               <salute>A vous,</salute>
+               <signed>A.A.</signed>
+            </closer>
+         </div>
+      </body>
+   </text>
+</TEI>

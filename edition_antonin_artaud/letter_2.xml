@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI [<!ENTITY person_authority_list SYSTEM 'person_authority_list.xml'> 
+<!ENTITY place_authority_list SYSTEM 'place_authority_list.xml'>]>
+
+
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The Mexico letters of Antonin Artaud. An anotated digital edition of three
+               extracts.</title>
+            <editor>
+               <forename>Florent</forename>
+               <surname>Farfouillon</surname>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Ecole nationale des Chartes - PSL</authority>
+            <pubPlace>Paris</pubPlace>
+            <date when="2026">2026</date>
+            <availability status="free">
+               <licence>
+                  <p>Unlicensed but freely accesible through a GitHub repository.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country ref="#france">France</country>
+                  <institution>IMEC - Institut Mémoires de l'Edition Contemporaine</institution>
+                  <collection>Fonds Paulhan</collection>
+               </msIdentifier>
+               <physDesc>
+                  <p>Originals have not been consulted for the present edition.</p>
+               </physDesc>
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="#artaud">
+                        <forename>Antonin</forename>
+                        <surname>Artaud</surname>
+                     </persName>
+                  </author>
+                  <title>Œuvres</title>
+                  <editor>
+                     <persName ref="#grossman">
+                        <forename>Évelyne</forename>
+                        <surname>Grossman</surname>
+                     </persName>
+                  </editor>
+                  <edition>
+                     <date when="2004">2004</date>
+                     <idno type="isbn">978-2-07-076507-2</idno>
+                  </edition>
+                  <imprint>
+                     <publisher>Gallimard</publisher>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                  </imprint>
+               </monogr>
+               <note>
+                  <p>In "Quarto" collection, this book compile majors works from Antonin Artaud,
+                     with an important place for his correspondance.</p>
+               </note>
+            </biblStruct>
+            &person_authority_list;
+            &place_authority_list;
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The project is part of the course "Modelling Humanities data with XML-TEI" and
+               consists of encoding a sample of documents according to the TEI-all standard.</p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#artaud">
+                  <forename>Antonin</forename>
+                  <surname>Artaud</surname>
+               </persName>
+               <placeName ref="#mexico_city">Mexico</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc>
+            <correspAction type="recieved">
+               <persName ref="#paulhan">
+                  <forename>Jean</forename>
+                  <surname>Paulhan</surname>
+               </persName>
+               <placeName ref="#paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <div type="letter">
+            <p><seg type="thesis">Depuis la <rs type="historical_event">Révolution</rs>
+                  <term type="ethnological_concept">l’Indien</term> a cessé d’être le paria du
+                     <placeName ref="#mexico">Mexique</placeName> ; mais c'est tout. On ne lui a pas
+                  fait une place à part. Je dirai même plus : on ne protège pas ses rites ; on se
+                  contente de respecter ses moeurs ; ce n'est pas la même chose. Et bien
+                  qu'officiellement le préjugé soit combattu, il y a un état d’esprit plus ou moins
+                  conscient, mais général, qui veut que les <term type="ethnological_concept"
+                     >Indiens</term> soient encore de race inférieure. On continue tout de même à
+                  prendre les <term type="ethnological_concept">Indiens</term> pour des <term
+                     type="ethnological_concept">sauvages</term>. On considère la <term
+                     type="ethnological_concept">masse Indienne</term> comme inculte et le mouvement
+                  qui domine au Mexique est <quote ana="general">"d’élever les <term
+                        type="ethnological_concept">Indiens incultes</term> jusqu’à une <seg
+                        type="ethnological_concept">notion occidentale de la culture</seg>,
+                     jusqu’aux bienfaits (SINISTRES) de la <term type="ethnological_concept"
+                        >civilisation</term>"</quote>.</seg></p>
+
+            <p>Il y a des <term type="ethnological_concept">Maîtres d’École</term>, ce que l’on
+               appelle ici <term type="ethnological_concept">Les Ruraux</term>, qui vont devant
+                  <term type="ethnological_concept">les masses Indiennes</term> prêcher <seg
+                  type="political_concept">l’Évangile de <persName ref="#marx" type="contemporary">Karl
+                  Marx</persName></seg>.</p>
+
+            <p>Mais devant <seg type="political_concept">l’Évangile de Karl Marx</seg>
+               <term type="ethnological_concept">les masses Indiennes</term> sont-disant incultes
+               sont dans l’état d’esprit de <persName ref="#moctezuma" type="historical" >Moctezuma</persName> en face
+               des prêches enfantins de <persName ref="#cortez" type="historical">Cortez</persName>. À travers 4
+               siècles la même éternelle erreur Blanche n’a pas cessé de se propager. Réduits en
+               nombre, malades, écrasés, en partie dégénérés, les <term type="ethnological_concept"
+                  >Indiens</term> gardent en eux le souvenir de leur vieille, de leur <term
+                  type="ethnological_concept">surnaturelle culture</term>, fruit d’une <term
+                  type="theological_oncept">surnaturelle inspiration</term>. <seg type="thesis">Si
+                  bien, que loin de chercher à élever les <term type="ethnological_concept"
+                     >Indiens</term> jusqu’à la culture ce sont les métis de <term
+                     type="ethnological_concept">Créoles</term> (les Créoles ici sont les
+                  descendants des <term type="ethnological_concept">Blancs</term>) qui devraient
+                  s’élever jusqu’à la culture des <term type="ethnological_concept"
+                  >Indiens</term></seg>. Cette culture subsiste, elle est lambeaux, mais elle
+               subsiste. <seg type="thesis">Les secrets de la guérison par les plantes qui pour
+                  notre esprit de blancs font partie de je ne sait quelle sorcellerie naturelle,
+                  sont en réalité les restes d'une antique <seg type="ethnological_concept">Science
+                     occulte de la guérison</seg>. Et les <term type="ethnological_concept"
+                     >indiens</term> dans leur atavisme éclatant savent percevoir encore les
+                  origines de cette <term type="philosophical_concept">science</term>. Ils sont les
+                  héritiers d’un temps où le monde possédait encore une <term
+                     type="ethnological_concept">culture</term>, une <term
+                     type="ethnological_concept">culture</term> qui était de la vie. Car pour eux la
+                     <term type="ethnological_concept">civilisation</term> ne peut pas être séparée
+                  de la <term type="ethnological_concept">culture</term>, et la <seg
+                     type="ethnological_concept">culture du mouvement même de la vie</seg>. Ils le
+                  savent, et ils le disent, dans un langage que nous n’arrivons plus à comprendre
+                  car nous nous sommes trop intelligents. <quote ana="general">« Et le foyer
+                     murmurant de vivres »</quote> nous avons fini par oublier ce que
+               c’était.</seg></p>
+         </div>
+      </body>
+   </text>
+</TEI>

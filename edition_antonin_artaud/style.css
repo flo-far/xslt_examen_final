@@ -1,0 +1,474 @@
+/* ================================================================
+   Artaud – Mexico Letters  |  Digital Edition
+   Style sobre, archivistique
+   Palette : crème, encre, terre cuite discrète
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+SC:wght@400;600&display=swap');
+
+/* ----------------------------------------------------------------
+   Variables
+   ---------------------------------------------------------------- */
+:root {
+    --cream:       #f5f0e8;
+    --cream-dark:  #ede6d6;
+    --ink:         #1c1a17;
+    --ink-light:   #4a4540;
+    --ink-faint:   #8a8178;
+    --rust:        #8b3a2a;
+    --border:      #cfc5b0;
+
+    --font-body:    'EB Garamond', Georgia, serif;
+    --font-display: 'Cormorant SC', 'Palatino Linotype', serif;
+
+    --max-width: 860px;
+    --reading-width: 680px;
+}
+
+/* ----------------------------------------------------------------
+   Reset & base
+   ---------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.75;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------------------------------
+   Navigation
+   ---------------------------------------------------------------- */
+nav {
+    background-color: var(--ink);
+    padding: 0.6rem 2rem;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--rust);
+}
+
+nav a {
+    color: var(--cream-dark);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: var(--rust);
+    color: #fff;
+}
+
+/* ----------------------------------------------------------------
+   Main layout
+   ---------------------------------------------------------------- */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+/* ----------------------------------------------------------------
+   Page d'accueil — en-tête avec portrait
+   ---------------------------------------------------------------- */
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 3rem;
+    align-items: start;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.header-label {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 0.75rem;
+}
+
+.site-header h1 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    font-style: italic;
+    color: var(--ink-light);
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-desc {
+    font-size: 0.95rem;
+    color: var(--ink-light);
+    max-width: 520px;
+    margin-bottom: 1.8rem;
+    line-height: 1.65;
+}
+
+.header-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    background: none;
+    padding: 0;
+}
+
+.btn-lettre {
+    display: inline-block;
+    border: 1px solid var(--rust);
+    color: var(--rust);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.45rem 1.1rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-lettre:hover {
+    background-color: var(--rust);
+    color: #fff;
+}
+
+/* Portrait */
+.header-portrait {
+    text-align: center;
+}
+
+.header-portrait img {
+    width: 100%;
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    box-shadow: 4px 6px 18px var(--shadow);
+    filter: sepia(15%) contrast(1.02);
+    /* Léger effet photographique vintage */
+}
+
+.header-portrait figcaption {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    margin-top: 0.6rem;
+    font-style: italic;
+    letter-spacing: 0.03em;
+}
+
+/* Cartes de présentation */
+.index-presentation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.index-card {
+    background: var(--cream-dark);
+    border: 1px solid var(--border);
+    padding: 1.4rem 1.5rem;
+}
+
+.index-card h2 {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 0.6rem;
+}
+
+.index-card p {
+    font-size: 0.9rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.index-card a {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--rust);
+    text-decoration: none;
+    margin-top: 0.4rem;
+}
+
+.index-card a:hover { text-decoration: underline; }
+
+/* ----------------------------------------------------------------
+   Pages de lettres
+   ---------------------------------------------------------------- */
+
+/* Métadonnées */
+.metadonnees {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--rust);
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.metadonnees h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+.metadonnees p {
+    font-size: 0.9rem;
+    color: var(--ink-light);
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.metadonnees strong {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+/* Corps de la lettre */
+.letter-body {
+    max-width: var(--reading-width);
+}
+
+.letter-body p {
+    margin-bottom: 1.4em;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.opener {
+    margin-bottom: 1.8rem;
+}
+
+.salute {
+    font-style: italic;
+    color: var(--ink-light);
+    margin-bottom: 0;
+}
+
+.closer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.signed {
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.location {
+    font-size: 0.88rem;
+    color: var(--ink-faint);
+}
+
+.post-scriptum {
+    font-size: 0.92rem;
+    color: var(--ink-light);
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border);
+}
+
+/* Blocs de texte mis en évidence */
+blockquote.displayed-text {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-light);
+    margin: 1.5rem 2rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* ----------------------------------------------------------------
+   Éléments inline annotés
+   ---------------------------------------------------------------- */
+
+/* Noms de personnes */
+a.persname {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--rust-light);
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+}
+
+a.persname:hover {
+    color: var(--rust);
+    text-decoration-style: solid;
+}
+
+a.persname.historical {
+    font-style: italic;
+}
+
+/* Noms de lieux */
+a.placename {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--sage);
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+}
+
+a.placename:hover {
+    color: var(--sage);
+    text-decoration-style: solid;
+}
+
+
+
+/* Citations */
+span.quote {
+    font-style: italic;
+    color: var(--ink-light);
+}
+
+/* Titres d'œuvres */
+cite.title {
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------------
+   Pages d'index
+   ---------------------------------------------------------------- */
+h1 {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.index-intro {
+    font-size: 0.9rem;
+    color: var(--ink-faint);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+ul.index-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+}
+
+li.index-entry {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 0.4rem;
+}
+
+.index-name {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--ink);
+    min-width: 180px;
+}
+
+.index-dates {
+    color: var(--ink-faint);
+    font-size: 0.88rem;
+}
+
+.index-links {
+    font-size: 0.85rem;
+}
+
+.index-links .letter-link {
+    color: var(--rust);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--rust);
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.index-links .letter-link:hover {
+    background: var(--rust);
+    color: #fff;
+}
+
+/* ----------------------------------------------------------------
+   Footer
+   ---------------------------------------------------------------- */
+footer {
+    background: var(--ink);
+    color: var(--ink-faint);
+    text-align: center;
+    padding: 1.2rem 2rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    margin-top: auto;
+}
+
+footer p { color: #8a8178; }
+
+/* ----------------------------------------------------------------
+   Responsive
+   ---------------------------------------------------------------- */
+@media (max-width: 700px) {
+    .site-header {
+        grid-template-columns: 1fr;
+    }
+    .header-portrait {
+        order: -1;
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    .index-presentation {
+        grid-template-columns: 1fr;
+    }
+    main { padding: 2rem 1.2rem 3rem; }
+    nav { padding: 0.5rem 1rem; }
+}
+
+/* Titre de l'article (requis W3C, masqué visuellement car redondant avec les métadonnées) */
+.letter-heading {
+    display: none;
+}

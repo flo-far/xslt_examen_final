@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI [<!ENTITY person_authority_list SYSTEM 'person_authority_list.xml'> 
+<!ENTITY place_authority_list SYSTEM 'place_authority_list.xml'>]>
+
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="mon_odd.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>The Mexico letters of Antonin Artaud. An anotated digital edition of three
+               extracts.</title>
+            <editor>
+               <forename>Florent</forename>
+               <surname>Farfouillon</surname>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Ecole nationale des Chartes - PSL</authority>
+            <pubPlace>Paris</pubPlace>
+            <date when="2026">2026</date>
+            <availability status="free">
+               <licence>
+                  <p>Unlicensed but freely accesible through a GitHub repository.</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country ref="#france">France</country>
+                  <institution>IMEC - Institut Mémoires de l'Edition Contemporaine</institution>
+                  <collection>Fonds Paulhan</collection>
+               </msIdentifier>
+               <physDesc>
+                  <p>Originals have not been consulted for the present edition.</p>
+               </physDesc>
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="#artaud">
+                        <forename>Antonin</forename>
+                        <surname>Artaud</surname>
+                     </persName>
+                  </author>
+                  <title>Œuvres</title>
+                  <editor>
+                     <persName ref="#grossman">
+                        <forename>Évelyne</forename>
+                        <surname>Grossman</surname>
+                     </persName>
+                  </editor>
+                  <edition>
+                     <date when="2004">2004</date>
+                     <idno type="isbn">978-2-07-076507-2</idno>
+                  </edition>
+                  <imprint>
+                     <publisher>Gallimard</publisher>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                  </imprint>
+               </monogr>
+               <note>
+                  <p>In "Quarto" collection, this book compile majors works from Antonin Artaud,
+                     with an important place for his correspondance.</p>
+               </note>
+            </biblStruct>
+            &person_authority_list;
+            &place_authority_list;
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>The project is part of the course "Modelling Humanities data with XML-TEI" and
+               consists of encoding a sample of documents according to the TEI-all standard.</p>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="#artaud"><forename>Antonin</forename>
+                  <surname>Artaud</surname></persName>
+               <placeName ref="#paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc>
+            <correspAction type="recieved">
+               <persName ref="#paulhan"><forename>Jean</forename><surname>Paulhan</surname></persName>
+               <placeName ref="#paris">Paris</placeName>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="letter">
+            <opener>
+               <salute>Très cher ami,</salute>
+            </opener>
+            <p>Je ne sais si vous vous souvenez qu’un jour je suis venu vous parler d’un projet de
+               voyage au <placeName ref="#mexico">Mexique</placeName> — dont je sens en ce qui me
+               concerne l’urgente nécessité, et je vous ai dit: <quote ana="#artaud"><persName
+                     ref="#massignon" type="contemporary">Louis Massignon</persName> est très
+                  capable de m’aiguiller de ce côté-là et de m’en faciliter les moyens</quote> ; et
+               vous m’avez répondu : <quote ana="#massignon">Qu’est-ce que <persName
+                     ref="#massignon" type="contemporary">Louis Massignon</persName> a à voir avec
+                  le <placeName ref="#mexique">Mexique</placeName> ?</quote></p>
+
+            <p>Il arrive que ce projet se concrétise et que vous pouvez beaucoup pour moi, à peu
+               près tout même — et cette fois il vous suffit de vouloir, et vous le pouvez
+               curieusement infiniment plus que <persName ref="#massignon" type="contemporary">Louis
+                  Massignon</persName>.</p>
+
+            <p>J’ai entendu parler depuis longtemps d’une sorte de mouvement de fond au <placeName
+                  ref="#mexico">Mexique</placeName> en faveur d'un retour à la civilisation d'avant
+                  <persName ref="#cortez" type="historical">Cortez</persName>. Cela m’a paru
+               bouleversant au possible et je me suis renseigné, notamment auprès de <persName
+                  ref="#ricard" type="contemporary">Robert Ricard</persName> qui en revient et a
+               fait, je crois, un stage à <orgName type="school">l’École Française de <placeName
+                     ref="#mexico_city">Mexico</placeName></orgName>.</p>
+
+            <p>J’ai brodé là-dessus un vaste projet de fond et je crois avoir trouvé une forme,
+               c’est-à-dire un moyen de le réaliser. Et voici comment, mais tout ceci, <persName
+                  ref="#paulhan" type="contemporary">Jean Paulhan</persName>, doit demeurer secret,
+               limité à vous et à moi et aux personnes qui pourront m’aider.</p>
+
+            <p><seg type="hypothesis">Je me trompe beaucoup peut-être mais la civilisation d'avant
+                     <persName ref="#cortez" type="historical">Cortèz</persName> c’est une
+                  civilisation à bases <term type="philosophical_concept">Métaphysiques</term> qui
+                  s’expriment dans la <term type="theological_concept">religion</term> et dans les
+                  actes en une sorte de <term type="theological_concept">totémisme</term> actif,
+                  répandu partout, créateur de Symboles et qui donne issue à toutes sortes
+                  d’applications.</seg></p>
+
+            <p><seg type="hypothesis">Je ne crois pas que ce mouvement pré-cortézien ait conscience
+                  de la magie qu’il recherche</seg>, mais quand j’ai exposé à <persName
+                  ref="#ricard" type="contemporary">Robert Ricard</persName>, lequel est un élève du
+               Professeur <persName ref="#rivet" type="contemporary">Rivet</persName>, mon projet et
+               mes idées il m’a dit: <quote ana="#ricard">Ces gens ne savent pas en réalité ce
+                  qu’ils recherchent. Vous pouvez contribuer à redresser leurs notions.</quote> Mais
+               il faut aller là-bas, et voici ce que j’ai combiné : Le Professeur <persName
+                  ref="#rivet" type="contemporary">Rivet</persName> à qui <persName ref="#ricard"
+                  type="contemporary">Robert Ricard</persName> a parlé de moi lui a dit : <quote
+                  ana="#rivet">Il n’y a pas d’argent, personne n’a plus d’argent</quote>. <seg
+                  type="project">J’ai donc un projet de conférences que je pourrai faire à
+                     <placeName ref="#mexico_city">Mexico</placeName> et dans quelques autres
+                  villes. Ces conférences je les ferai sur les rapports du <term type="domain"
+                     >Théâtre</term> avec la <term type="ethnological_concept">civilisation</term>
+                  et avec la <term type="philosophical_concept">culture</term>, ce qui, je crois,
+                  est de toute actualité.</seg>
+               <seg type="hypothesis">Et je dirai, le <term type="domain">théâtre</term> peut nous
+                  aider à retrouver une <term type="philosophical_concept">culture</term> et nous en
+                  donner immédiatement les moyens : la <term type="philosophical_concept"
+                     >culture</term> n’est pas dans les livres, dans les peintures, les statues, les
+                  danses, elle est dans les nerfs et dans la fluidité des nerfs, des organes
+                  sensibles, dans une sorte de <term type="theological_concept">manas</term> qui
+                  dort et qui peut mettre l’esprit immédiatement dans l’attitude de réceptivité la
+                  plus haute, de réceptivité totale et lui permettre de réagir dans le sens le plus
+                  dirigé, le plus élevé et aussi le plus pénétrant et le plus fin ; ce <term
+                     type="theological_concept">manas</term> le <term type="domain">théâtre</term>
+                  tel que je le conçois le réveille — et voilà ce que l’on pense en <placeName
+                     ref="#france">France</placeName>.</seg></p>
+         </div>
+      </body>
+   </text>
+</TEI>
