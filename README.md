@@ -1,6 +1,6 @@
 # xslt_examen_final
 
-# The Mexico Letters of Antonin Artaud — Édition numérique
+# Artaud. Lettres du Mexique — Édition numérique
 
 Édition numérique de trois extraits de lettres d'Antonin Artaud adressées à Jean Paulhan, conservées à l'IMEC (fonds Paulhan). Les lettres, écrites entre 1935 et 1936, portent sur le projet de voyage d'Artaud au Mexique et ses réflexions sur les civilisations amérindiennes.
 
